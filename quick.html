@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         GMT Mobile
+      </title>
+      <meta http-equiv="cache-control" content="no-cache">
+      <meta http-equiv="Pragma" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <script>
+         loadScript = function (strScript) {
+           document.write('\x3Cscript type="text/javascript" src="' + strScript + '">\x3C/script>');
+         }
+           loadStyle = function (strStyle) {
+             document.write('\x3Clink id="theme001" href="' + strStyle + '" rel="stylesheet" type="text/css">');
+           }
+             var ISDEBUG = (document.URL.indexOf('debug') > '-1') ? true : false;
+           //ISDEBUG = true;
+      </script>
+      <script>
+         loadScript('scripts/version.js?t=' + new Date().getTime());
+      </script>
+      <script type="text/javascript" src="scripts/version.js?t=1400264145762"></script>
+      <script>
+         loadStyle('styles/style.css?version=' + JMSVERSION);
+         loadScript('scripts/jquery-2.0.3.min.js?version=' + JMSVERSION);
+         loadScript('scripts/jquery-ui-1.10.3.min.js?version=' + JMSVERSION);
+         loadScript('scripts/jquery.hammer.js?version=' + JMSVERSION);
+         loadScript('scripts/jquery.klibrary.1.0.js?version=' + JMSVERSION);
+         loadScript('scripts/usermanager.js?version=' + JMSVERSION);
+         loadScript('scripts/home.js?version=' + JMSVERSION);
+         loadScript('scripts/quick.js?version=' + JMSVERSION);
+         loadScript('scripts/full.js?version=' + JMSVERSION);
+      </script>
+      <link id="theme001" href="styles/style.css?version=1071" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="scripts/jquery-2.0.3.min.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/jquery-ui-1.10.3.min.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/jquery.hammer.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/jquery.klibrary.1.0.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/usermanager.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/home.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/quick.js?version=1071"></script>
+      <script type="text/javascript" src="scripts/full.js?version=1071"></script>
+   </head>
+   <body>
+      <div style="left: 95px; display: none;" class="progress">
+         <img src="images/loading.gif">
+         <div>
+            Please wait...
+         </div>
+      </div>
+      <form onsubmit="return userManager.validateLogin();">
+		  <div class="login">
+		    <div class="row" style="margin-top: 20px;">
+		      <img src="images/logo-mobile.png">
+		    </div>
+		    <div class="row">
+		      <div class="input">
+		        <input class="username" size="40" placeholder="username" type="text">
+		      </div>
+		      <div class="input">
+		        <input class="password" size="40" placeholder="password" type="password">
+		      </div>
+		    </div>
+		    <div class="row">
+		      <input class="button" value="Login" type="submit">
+		    </div>
+		  </div>
+		</form>
+      <div class="device">
+         <div class="header">
+            <div class="home">
+            </div>
+            <div class="title">
+               Quick Time
+            </div>
+            <div class="logout"></div>
+         </div>
+         <div class="content">
+            <div class="pages">
+               <div style="display: block;" class="page quick" type="quick">
+                  <div class="add">
+                     <div class="icon">
+                     </div>
+                     <div class="title">
+                        Add New
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="5" data-billable="True" data-minutes="45" data-date="04/17/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/17/2014
+                        </div>
+                        <div class="value">
+                           00:45
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable True">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="6" data-billable="False" data-minutes="34" data-date="04/18/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/18/2014
+                        </div>
+                        <div class="value">
+                           00:34
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable False">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="7" data-billable="True" data-minutes="235" data-date="04/18/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/18/2014
+                        </div>
+                        <div class="value">
+                           03:55
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable True">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="8" data-billable="True" data-minutes="45" data-date="04/19/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/19/2014
+                        </div>
+                        <div class="value">
+                           00:45
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable True">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="1" data-billable="True" data-minutes="45" data-date="04/19/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/19/2014
+                        </div>
+                        <div class="value">
+                           00:45
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable True">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="2" data-billable="False" data-minutes="22" data-date="04/20/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/20/2014
+                        </div>
+                        <div class="value">
+                           00:22
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable False">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="3" data-billable="True" data-minutes="32" data-date="04/21/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/21/2014
+                        </div>
+                        <div class="value">
+                           00:32
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable True">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="4" data-billable="False" data-minutes="56" data-date="04/22/2014" data-comments="None">
+                     <div class="row">
+                        <div class="title">
+                           04/22/2014
+                        </div>
+                        <div class="value">
+                           00:56
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                           None
+                        </div>
+                        <div class="value">
+                           <div class="billable False">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-quicktimeid="9" data-billable="False" data-minutes="324" data-date="05/12/2014" data-comments="">
+                     <div class="row">
+                        <div class="title">
+                           05/12/2014
+                        </div>
+                        <div class="value">
+                           05:24
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="title">
+                        </div>
+                        <div class="value">
+                           <div class="billable False">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="z-index: 1000; display: none;" class="koverlay updatequicktime">
+         <div class="top">
+            Update Time Entry
+         </div>
+         <div class="main">
+            <div class="item">
+               Date
+            </div>
+            <div class="item">
+               <input class="date" type="date">
+            </div>
+            <div class="item">
+               Minutes
+            </div>
+            <div class="item">
+               <input class="minutes" type="text">
+               <div class="billable yes">
+                  Billable
+               </div>
+            </div>
+            <div class="item">
+               Notes
+            </div>
+            <div class="item">
+               <textarea class="notes">
+               </textarea>
+            </div>
+         </div>
+         <div class="bottom">
+            <div class="button cancel">
+               Cancel
+            </div>
+            <div class="button update">
+               Update
+            </div>
+         </div>
+      </div>
+      <div style="z-index: 1000; display: none;" class="koverlay addquicktime">
+         <div class="top">
+            Add Quick Time Entry
+         </div>
+         <div class="main">
+            <div class="item">
+               Date
+            </div>
+            <div class="item">
+               <input class="date" type="date">
+            </div>
+            <div class="item">
+               Minutes
+            </div>
+            <div class="item">
+               <input class="minutes" type="text">
+               <div class="billable yes">
+                  Billable
+               </div>
+            </div>
+            <div class="item">
+               Notes
+            </div>
+            <div class="item">
+               <textarea class="notes">
+               </textarea>
+            </div>
+         </div>
+         <div class="bottom">
+            <div class="button cancel">
+               Cancel
+            </div>
+            <div class="button add">
+               Add
+            </div>
+         </div>
+      </div>
+      <script>
+         loadScript('scripts/main.js?version=' + JMSVERSION);
+      </script>
+      <script type="text/javascript" src="scripts/jhyo.js"></script>
+      <script type="text/javascript" src="scripts/main.js?version=1071"></script>
+   </body>
+</html>

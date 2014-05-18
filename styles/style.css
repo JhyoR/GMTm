@@ -1,0 +1,520 @@
+body
+{
+    margin: 0px;
+    font-family: Verdana;
+    font-size: 12pt;
+}
+
+input, select, textarea
+{
+    font-family: Verdana;
+    font-size: 12pt;
+}
+form .login {
+	display: none;
+}
+.login
+{
+    padding: 10px;
+    text-align: center;
+}
+
+    .login .row
+    {
+        padding: 10px;
+    }
+
+    .login .username
+    {
+        background-color: #2A759E;
+        padding: 10px;
+        border: none;
+        margin-bottom: 1px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        width: 200px;
+        color: #fff;
+    }
+
+    .login .password
+    {
+        background-color: #2A759E;
+        padding: 10px;
+        border: none;
+        margin-bottom: 1px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 200px;
+        color: #fff;
+    }
+
+.button
+{
+    background: #3692C6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41ACEA), color-stop(100%,#3692C6));
+    background: -webkit-linear-gradient(top, #41ACEA 0%,#3692C6 100%);
+    background: -o-linear-gradient(top, #41ACEA 0%,#3692C6 100%);
+    background: -ms-linear-gradient(top, #41ACEA 0%,#3692C6 100%);
+    background: linear-gradient(to bottom, #41ACEA 0%,#3692C6 100%);
+    border: 1px solid #2D83B4;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 2px 3px rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.31);
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .button.gray
+    {
+        background: #f7f7f7;
+		background-image: -o-linear-gradient(-89deg, #FDFDFD 0%, #EFEFEF 100%);
+		background-image: -moz-linear-gradient(-89deg, #FDFDFD 0%, #EFEFEF 100%);
+		background-image: -ms-linear-gradient(-89deg, #FDFDFD 0%, #EFEFEF 100%);
+		background-image: linear-gradient(-179deg, #FDFDFD 0%, #EFEFEF 100%);
+		border: 1px solid #D1D1D1;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.31);
+        margin: auto;
+        padding: 10px;
+        cursor: pointer;
+        font-family: Helvetica;
+		font-size: 16px;
+		color: #7D7D7D;
+		text-shadow: 0px 1px 0px rgba(255,255,255,0.85);
+    }
+
+.header
+{
+    background-color: #2A759E;
+    color: white;
+    overflow: hidden;
+}
+
+.header
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    height: 54px;
+    
+    /* Edit */
+    font-family: helvetica;
+    background-image: -o-linear-gradient(-89deg, #00A7E6 0%, #007BAA 100%);
+    background-image: -moz-linear-gradient(-89deg, #00A7E6 0%, #007BAA 100%);
+    background-image: -ms-linear-gradient(-89deg, #00A7E6 0%, #007BAA 100%);
+    background-image: linear-gradient(-179deg, #00A7E6 0%, #007BAA 100%);
+    /* Rectangle 35: */
+}
+
+    .header .title
+    {
+        float: left;
+        font-size: 13pt;
+        margin: 19px 0 0 8px;
+        color: #FFFFFF;
+        line-height: 17px;
+        text-shadow: 0px -1px 0px rgba(0,0,0,0.18);
+
+    }
+
+    .header .home
+    {
+        background: url("../images/sprite.png") repeat scroll -192px 0 rgba(0, 0, 0, 0);
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        margin: 12px 5px 12px 12px;
+        width: 26px;
+    }
+
+        .header .home.tapped
+        {
+        }
+
+
+    .header .logout
+    {
+        background-color: #FFFFFF;
+        border-radius: 2px 2px 2px 2px;
+        color: #000000;
+        cursor: pointer;
+        float: right;
+        height: 23px;
+        margin: 13px;
+        padding: 0 0 0 6px;
+        width: 18px;
+        background: url("../images/sprite.png") repeat scroll -158px -3px rgba(0, 0, 0, 0);
+    }
+
+        .header .logout.tapped
+        {
+        }
+
+.progress
+{
+    background-color: #eee;
+    box-shadow: 0 0 20px #FFFFFF;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding: 30px;
+    position: absolute;
+    top: 80px;
+    z-index: 100;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #ccc;
+    color: #000000;
+    text-align: center;
+}
+
+.content
+{
+    margin: 54px 0px 0px 0px;
+    overflow: hidden;
+    min-height: 100%;
+    height: 100%;
+}
+
+.home .items
+{
+    overflow: hidden;
+}
+
+    .home .items .item
+    {
+        cursor: pointer;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+        .home .items .item .text
+        {
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .home .items .item.tapped
+        {
+            background-color: #9BC1DB;
+            -webkit-transform: scale(0.98);
+            -moz-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+            transform: scale(0.98);
+        }
+
+.quick
+{
+}
+
+    .quick .add
+    {
+        border-bottom: 1px solid rgba(116, 206, 227, 0.3);
+        background-color: #C3E7F5;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 10px;
+
+    }
+
+        .quick .add.tapped
+        {
+            background-color: #CBDFED;
+        }
+
+        .quick .add .icon
+        {
+            background: url("../images/sprite.png") repeat scroll -217px 0 rgba(0, 0, 0, 0);
+            cursor: pointer;
+            float: left;
+            height: 25px;
+            width: 25px;
+            margin-left: 4px;
+            margin-right: 10px;
+        }
+
+        .quick .add .title
+        {
+            padding: 3px 2px 1px 2px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            color: #6EA8BA;
+        }
+
+    .quick .item
+    {
+        border-bottom: 1px dashed #C3E7F5;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 10px;
+        font-size: 12pt;
+        font-family: helvetica;
+    }
+
+        .quick .item:nth-child(odd)
+        {
+            background-color: rgba(250, 253, 255, 0.77);
+        }
+
+        .quick .item:nth-child(even)
+        {
+            background-color: #FFF;
+        }
+
+        .quick .item.tapped
+        {
+            background-color: #9BC1DB;
+        }
+
+        .quick .item.default
+        {
+            background-color: #9BC1DB;
+        }
+
+        .quick .item .row
+        {
+            overflow: hidden;
+        }
+
+        .quick .item .title
+        {
+            padding: 2px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            color: #8A8A8A;
+        }
+
+        .quick .item .value
+        {
+            text-align: right;
+            padding: 2px;
+            float: right;
+            width: 120px;
+        }
+
+        .quick .item .billable.False
+        {
+            background-color: #ccc;
+            border-radius: 5px;
+            float: right;
+            height: 20px;
+            width: 20px;
+        }
+
+        .quick .item .billable.True
+        {
+            background-color: #66CC66;
+            border-radius: 5px;
+            float: right;
+            height: 20px;
+            width: 20px;
+        }
+
+.full
+{
+}
+
+    .full .item
+    {
+        border-bottom: 1px dashed #CCCCCC;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+        .full .item:nth-child(odd)
+        {
+            background-color: #F2F2F2;
+        }
+
+        .full .item:nth-child(even)
+        {
+            background-color: #FFF;
+        }
+
+        .full .item.tapped
+        {
+            background-color: #9BC1DB;
+        }
+
+        .full .item.default
+        {
+            background-color: #9BC1DB;
+        }
+
+        .full .item .row
+        {
+            overflow: hidden;
+        }
+
+        .full .item .title
+        {
+            padding: 2px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            color: #333;
+        }
+
+        .full .item .value
+        {
+            text-align: right;
+            padding: 2px;
+            float: right;
+            width: 120px;
+        }
+
+
+
+.koverlay
+{
+    background-color: rgba(244,252,255,0.97);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 54px;
+}
+
+    .koverlay .top
+    {
+        border-bottom: 1px solid #87CCE1;
+        width: 100%;
+        background-color: rgba(114, 213, 248, 0.31);
+        color: #6EA8BA;
+        overflow: hidden;
+        float: left;
+        font-size: 11pt;
+        padding: 16px 16px 16px 22px;
+        font-family: helvetica;
+        border-bottom: 1px solid rgba(116, 206, 227, 0.3);
+        cursor: pointer;
+
+        
+    }
+
+    .koverlay .main
+    {
+        padding: 10px 10px 10px 10px;
+        overflow: hidden;
+
+    }
+
+        .koverlay .main .item
+        {
+            margin: 10px;
+            overflow: hidden;
+            font-size: 11pt;
+        }
+
+            .koverlay .main .item .date
+            {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid rgba(110, 174, 208, 0.4);
+                width: 100%;
+                padding: 10px;
+            }
+
+            .koverlay .main .item .minutes
+            {
+                padding: 10px;
+                border: 1px solid rgba(110, 174, 208, 0.4);
+                border-radius: 5px;
+                width: 60%;
+            }
+
+            .koverlay .main .item .billable
+            {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                border-radius: 5px;
+                padding: 12px;
+                float: right;
+               cursor: pointer;
+                width: 27%;
+                text-align: center;
+
+            }
+
+                .koverlay .main .item .billable.yes
+                {
+                    background-color: #00aa00;
+                    color: #FFFFFF;
+                }
+
+                .koverlay .main .item .billable.no
+                {
+                    background-color: #aaa;
+                                        color: #000;
+
+                }
+
+            .koverlay .main .item .notes
+            {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid rgba(110, 174, 208, 0.4);
+                width: 100%;
+                padding: 10px;
+            }
+
+    .koverlay .bottom
+    {
+    	border-bottom: 1px solid #87CCE1;
+        background-color: rgba(114, 213, 248, 0.31);
+        color: #6EA8BA;
+        overflow: hidden;
+        float: none;
+        font-size: 11pt;
+        padding: 16px 22px 16px 22px !important;
+		position: relative;
+        cursor: pointer;
+        top: 100px;
+
+    }
+
+    .koverlay .button
+    {
+
+        font-size: 12pt
+    }
+    		.koverlay .update {
+    			
+    			float: none;
+    			display: block;
+	    		text-align: center;
+    		}
+		    .koverlay .cancel
+    {
+    	box-shadow: none;
+    	border: none;
+        position: absolute;
+        top: 68px;
+		display: none;
+		color: #000000;
+		cursor: pointer;
+		float: right !important;
+		height: 18px;
+		width: 18px;
+		background: url("../images/sprite.png") repeat scroll -88px -3px rgba(0, 0, 0, 0);
+    }
