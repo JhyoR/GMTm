@@ -480,6 +480,7 @@ form .login {
 
     .koverlay .bottom
     {
+    	display: block;
     	border-bottom: 1px solid #87CCE1;
         background-color: rgba(114, 213, 248, 0.31);
         color: #6EA8BA;
@@ -487,9 +488,12 @@ form .login {
         float: none;
         font-size: 11pt;
         padding: 16px 22px 16px 22px !important;
-		position: relative;
+		position: fixed;
         cursor: pointer;
-        top: 100px;
+		bottom: 0px;
+		width: 100% !important;
+		height: 40px;
+		text-align: center;
 
     }
 
@@ -503,18 +507,21 @@ form .login {
     			float: none;
     			display: block;
 	    		text-align: center;
+	    		width: 200px;
+	    		position: relative;
     		}
 		    .koverlay .cancel
     {
     	box-shadow: none;
     	border: none;
-        position: absolute;
+        position: fixed;
         top: 68px;
-		display: none;
+        right: 12px;
+		display: block;
 		color: #000000;
 		cursor: pointer;
 		float: right !important;
-		height: 18px;
-		width: 18px;
+		height: 12px;
+		width: 12px;
 		background: url("../images/sprite.png") repeat scroll -88px -3px rgba(0, 0, 0, 0);
     }
