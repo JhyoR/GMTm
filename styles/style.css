@@ -80,7 +80,6 @@ form .login {
         display: block;
         text-align: center;
         text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.31);
-        margin: auto;
         padding: 10px;
         cursor: pointer;
         font-family: Helvetica;
@@ -487,11 +486,11 @@ form .login {
         overflow: hidden;
         float: none;
         font-size: 11pt;
-        padding: 16px 22px 16px 22px !important;
+        padding: 16px 0px 16px 0px;
 		position: fixed;
         cursor: pointer;
 		bottom: 0px;
-		width: 100% !important;
+		width: 100%;
 		height: 40px;
 		text-align: center;
 
@@ -507,8 +506,11 @@ form .login {
     			float: none;
     			display: block;
 	    		text-align: center;
-	    		width: 200px;
-	    		position: relative;
+	    		width: auto;
+	    		height: auto;
+	    		position: absolute;
+	    		left: 22px;
+	    		right: 22px;
     		}
 		    .koverlay .cancel
     {
